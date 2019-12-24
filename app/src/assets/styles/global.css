@@ -1,0 +1,66 @@
+/* ================================================================= *\
+ * GLOBAL STYLES
+ * This file should be used for global styles only. Component-specific 
+ * styles should be added to their component's folder and imported with 
+ * CSS Modules. See app/src/components/Link for an example, or read a 
+ * short how-to at zeph.co/css-modules
+\* ================================================================= */
+
+
+
+
+/* Delete this HTML selector to remove the default gradient: */
+html {
+	color: #fff;
+	background: linear-gradient(220deg, red, blue);
+	background-size: 200% 200%;
+}
+/* Stop deleting here */
+
+
+
+
+/* Reset */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 16px;
+	height: 100%;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+		'Helvetica Neue', sans-serif;
+}
+
+body {
+	/* Centers body contents in middle of window */
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+p {
+	margin: 1rem 0;
+}
+
+/* Grid */
+
+:global .grid {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+:global .column {
+	box-sizing: border-box;
+	flex: 1;
+}
+
+/* Utilities */
+
+:global .centered {
+	text-align: center;
+}
